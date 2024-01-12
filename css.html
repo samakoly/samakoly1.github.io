@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+</head>
+<body class="bh">
+  
+   <div class="d1"></div>
+   <div class="d2"></div>
+   <div class="d3"></div><br><br>
+    <div class="d4">
+      <div id="div2">
+        <p>study with me with focus</p>
+        <input type="text" id="div3"><br>
+        <div class="space">
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+        <button onclick="reset()">reset</button>
+      </div>
+      </div>
+      <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div>
+      <h1 class="home">CSS</h1>
+
+      <div class="entete">
+        <a href="#intro" class="a2"><h1>introduction</h1></a>
+        <a href="#impact" class="a2"> <h1>impact de css sur html</h1></a>
+          <a href="#bal" class="a2"><h1>les attribus en css</h1></a>
+          <a href="#pseu" class="a2"><h1>psuedo-classes/elements</h1></a>
+          <a href="#an" class="a2"><h1>animation/ <br>adaptation..</h1></a>
+    </div>
+
+    <br><br>
+    <h1 class="h11" id="intro">introduction</h1><br>
+    <img src="5.jpg" class="css" alt="">
+    <p>
+        CSS, ou Cascading Style Sheets (Feuilles de style en cascade), est un langage de feuilles de style utilisé pour décrire la présentation d'un document écrit en HTML (HyperText Markup <br> Language) ou XML (eXtensible Markup Language). Il a été développé pour séparer la structure et le contenu d'une page web de sa présentation visuelle, permettant ainsi aux développeurs <br> web de contrôler avec précision l'apparence et le style des éléments d'une page.
+
+        La séparation des préoccupations (séparation de la structure et de la présentation) est l'un des principes <br> fondamentaux de la conception web moderne, facilitant la maintenabilité, la flexibilité et la cohérence des sites web à grande échelle. <br><br>
+        
+        Le fonctionnement de CSS repose sur des règles de style qui définissent comment un élément HTML particulier doit être affiché. Ces règles sont généralement spécifiées dans un fichier externe (extension .css) et sont ensuite liées aux documents HTML à l'aide de balises &lt;link> ou de déclarations intégrées directement dans la balise HTML &lt;style>.
+        
+        Une règle CSS se compose de deux parties principales : le sélecteur et la déclaration. Le sélecteur identifie les éléments HTML auxquels la règle s'applique, tandis que la déclaration spécifie les propriétés de style à appliquer à ces éléments. Par exemple, pour définir la couleur du texte d'un paragraphe en rouge, on peut utiliser le sélecteur "p" pour cibler tous les paragraphes et déclarer la propriété "color" avec la valeur "red".
+        <img src="7.jpg" class="css1" alt="">
+        CSS offre une multitude de propriétés de style telles que la couleur, la police, la taille, la marge, le positionnement, les bordures, les arrière-plans, les animations, les transformations et bien d'autres. Ces propriétés permettent aux développeurs de personnaliser l'apparence des éléments HTML de manière détaillée. <br><br>
+        
+        En plus des sélecteurs de base (sélection par balise, classe, identifiant), CSS propose des sélecteurs avancés comme les sélecteurs d'enfant, les sélecteurs adjacents, les pseudo-classes et les pseudo-éléments. Ces fonctionnalités avancées permettent de cibler spécifiquement des éléments dans des contextes plus complexes, ce qui offre une grande souplesse dans la conception des mises en page et des styles. <br><br>
+        
+        Avec l'évolution des technologies web, CSS a également intégré des fonctionnalités pour rendre les sites web adaptatifs et responsives. Les Media Queries, par exemple, permettent d'appliquer des styles spécifiques en fonction des caractéristiques de l'appareil utilisé, comme la largeur de l'écran, offrant ainsi une expérience utilisateur optimisée sur différents périphériques tels que les ordinateurs de bureau, les tablettes et les smartphones. <br><br>
+        
+        En résumé, CSS est un outil essentiel pour les développeurs web, offrant un contrôle précis sur l'aspect visuel des pages web. En combinant CSS avec HTML et d'autres technologies front-end comme JavaScript, il est possible de créer des sites web dynamiques, interactifs et esthétiques, améliorant ainsi l'expérience utilisateur et la présentation des contenus en ligne. <br><br>
+        
+    </p>
+    <h1 class="h11" id="impact">impact de css sur html</h1> <br>
+     <p>
+        L'impact de CSS sur HTML est significatif et multiple, influençant de manière positive la façon dont les pages web sont structurées et présentées. Voici quelques-uns des principaux impacts de CSS sur HTML : <br><br>
+        <ul>
+       <li><mark> Séparation de la structure et de la présentation </mark>: CSS permet de séparer complètement la structure (HTML) de la présentation (CSS) d'une page web. Cela améliore la maintenabilité du code en permettant aux développeurs de modifier facilement l'apparence d'un site sans altérer sa structure sous-jacente.</li> <br><br>
+        
+        <li><mark>Amélioration de la lisibilité du code </mark>: En utilisant des fichiers CSS externes, le code HTML devient plus clair et moins encombré, car il se concentre principalement sur la structure et le contenu de la page sans mélanger les informations de style.</li> <br><br>
+        
+        <li><mark>Flexibilité et contrôle du design</mark> : CSS offre une large gamme de propriétés de style qui permettent aux développeurs de contrôler avec précision l'apparence des éléments HTML. Cela inclut la gestion des couleurs, des polices, des marges, des tailles, des bordures, du positionnement et bien plus encore.</li> <br><br>
+        
+        <li><mark>Consistance et cohérence</mark> : En appliquant des règles CSS cohérentes à travers toutes les pages d'un site, il est possible de maintenir une apparence visuelle uniforme, assurant ainsi une expérience utilisateur cohérente.</li> <br><br>
+       
+        <li><mark>Adaptabilité et responsivité</mark> : Grâce à des fonctionnalités telles que les Media Queries, CSS permet de créer des mises en page et des styles qui s'adaptent aux différentes tailles d'écran et aux divers appareils (ordinateurs de bureau, tablettes, smartphones), offrant ainsi une expérience utilisateur optimale sur tous les supports.</li> <br><br>
+        
+        <li><mark>Accessibilité améliorée</mark> : En séparant la structure du contenu et de la présentation, les développeurs peuvent créer des sites web plus accessibles. Cela signifie qu'ils peuvent ajuster le contenu pour répondre aux besoins spécifiques des utilisateurs (par exemple, en augmentant la taille du texte pour une meilleure lisibilité). </li><br><br>
+        
+        <li><mark>Économie de temps </mark>: En appliquant des styles via CSS, les modifications de conception peuvent être apportées rapidement et facilement sur l'ensemble d'un site web sans avoir à modifier chaque élément individuellement dans le code HTML.</li> <br><br>
+        <div class="flot">
+            <img src="witout.jpg" class="css4" alt="">
+            <img src="with.jpg" class="css4" alt=""><br>
+           <center><strong class="str">without /with css</strong> </center>
+        </div>
+    </ul>
+     </p>
+     <h1 class="h11" id="bal">les attributs en css</h1> <br>
+      <h2> 1-les syntaxe de css </h2>
+     <p>
+       <strong style="color: rgb(113, 34, 5);">La syntaxe de base en CSS est relativement simple. Voici une explication succincte de la syntaxe CSS : </strong> <br>
+
+     Sélecteur : Les règles CSS commencent généralement par un sélecteur qui cible les éléments HTML que vous souhaitez styliser. Par exemple : <br><br>
+      <img src="11.png" alt="" class="html"> <br>
+      Dans cet exemple, h1 est le sélecteur qui cible tous les éléments &lt;h1> du HTML. <br>Propriétés et valeurs : À l'intérieur des accolades {} après le sélecteur, vous déclarez les propriétés CSS que vous souhaitez appliquer à ce sélecteur. Chaque propriété est suivie de deux points : et d'une valeur. Par exemple : <br><br>
+     <img src="22.png" alt="" class="html"> <br>
+     Dans cet exemple, font-size et color sont des propriétés, et 24px et #333 sont les valeurs appliquées à ces propriétés respectives. <br>
+     Commentaires : Les commentaires en CSS sont inclus entre /* et */ et ne sont pas interprétés par le navigateur. Ils servent à documenter le code : <br><br>
+     <img src="33.png" alt="" class="html"> <br>
+     Classes et IDs : En plus des sélecteurs d'éléments (h1, p, etc.), vous pouvez cibler des classes et des IDs spécifiques en utilisant . pour les classes et # pour les IDs : <br>
+     <img src="44.png" class="html" alt=""> <br>
+     Groupement des sélecteurs : Vous pouvez regrouper plusieurs sélecteurs pour appliquer les mêmes styles à différents éléments : <br><br>
+     <img src="55.png" class="html" alt=""> <br><br>
+     <h2>2-les attributs </h2>
+     <strong style="color: red;">!vous pouvez <a href="css1.html">essayer </a> ces code pour mieux comprend</strong><br>
+
+     Certaines propriétés CSS sont utilisées plus fréquemment que d'autres en raison de leur importance dans la conception et la mise en page des sites web. Voici une liste de 30 attributs CSS très couramment utilisés : <br>
+    <ul>
+
+     <li><mark> color</mark> : Définit la couleur du texte. </li><br>
+     
+     <li><mark>  font-family</mark> : Spécifie la famille de polices utilisée pour le texte. </li><br>
+     
+     <li><mark> font-size</mark> : Détermine la taille de la police.</li> <br>
+     
+     <li><mark> font-weight</mark> : Indique l'épaisseur ou le poids de la police (normal, bold, etc.). </li><br>
+     
+     <li><mark>  text-align</mark> : Aligne le texte à gauche, à droite, au centre ou justifié.</li> <br>
+     
+    <li><mark> background-color</mark> : Définit la couleur d'arrière-plan d'un élément.</li> <br>
+     
+    <li> <mark> margin</mark> : Définit l'espace extérieur autour d'un élément.</li> <br>
+     
+    <li><mark>  padding</mark> : Définit l'espace intérieur autour du contenu d'un élément.</li> <br>
+     
+     <li><mark> border </mark>: Crée une bordure autour d'un élément avec des propriétés comme la largeur, le style et la couleur.</li> <br>
+     
+    <li><mark> display</mark> : Définit le mode d'affichage d'un élément (block, inline, flex, etc.). </li><br>
+     
+    <li><mark> width </mark>: Spécifie la largeur d'un élément.</li> <br>
+     
+     <li><mark>  height </mark>: Spécifie la hauteur d'un élément.</li> <br>
+     
+     <li><mark>  float </mark>: Contrôle le positionnement d'un élément par rapport aux autres éléments.</li> <br>
+     
+    <li><mark> position</mark> : Définit le type de positionnement (relative, absolute, fixed, etc.).</li> <br>
+     
+     <li><mark> top, bottom, left, right</mark> : Propriétés utilisées pour déplacer et positionner des éléments positionnés.</li> <br>
+     
+    <li><mark>= z-index</mark> : Détermine l'empilement des éléments positionnés les uns par rapport aux autres.</li> <br> 
+     
+    <li><mark> text-decoration</mark> : Ajoute ou supprime des décorations (soulignement, barré, etc.) du texte.</li> <br>
+     
+     <li> <mark> line-height</mark> : Définit la hauteur de ligne dans un texte.</li> <br>
+     
+     <li><mark>  box-shadow </mark>: Ajoute une ombre à un élément.</li> <br>
+     
+    <li><mark> border-radius </mark>: Arrondit les coins d'un élément.</li> <br>
+     
+     <li><mark> opacity </mark>: Définit la transparence d'un élément.</li> <br>
+     
+     <li> <mark> overflow </mark>: Contrôle la façon dont le contenu dépasse les limites d'un élément.</li> <br>
+     
+     <li><mark> cursor </mark>: Change le curseur de la souris lorsqu'il survole un élément.</li> <br>
+     
+    <li><mark> text-transform</mark> : Modifie la casse du texte (majuscules, minuscules, capitales, etc.).</li> <br>
+     
+     <li><mark> transition </mark>: Ajoute des transitions animées entre les états d'un élément. </li><br>
+     
+    <li><mark> flexbox properties (flex-direction, justify-content, align-items) </mark>: Utilisées pour le positionnement flexible des éléments enfants dans un conteneur flex.</li> <br>     
+    <li><mark> grid properties (grid-template-columns, grid-template-rows, grid-gap)</mark> : Pour créer des mises en page en grille.</li> <br>
+    </ul> 
+    </p>
+    <h1 class="h11" id="pseu">les pseudo-classes/elements</h1> <br>
+     <p>
+        les pseudo-classes et pseudo-éléments en CSS sont des sélecteurs utilisés pour cibler des éléments HTML spécifiques dans des états particuliers ou pour insérer du contenu dans le DOM sans avoir à modifier le balisage HTML. Voici des explications détaillées sur chacun : <br>
+       <strong> Pseudo-classes </strong>:
+       Les pseudo-classes sont utilisées pour définir le style d'un élément HTML dans des états spécifiques ou en fonction de son interaction avec l'utilisateur. Elles sont représentées par deux points (:) suivis du nom de la pseudo-classe(syntaxe: tag/class/id:psuedo-classe{propriétés;}). Par exemple : <br>
+       <mark>:hover </mark> : Applique un style lorsqu'un utilisateur survole un élément avec le curseur de la souris. <br><br>
+       <mark>:active </mark>: Applique un style à un élément lorsqu'il est activé (lorsque l'utilisateur clique dessus). <br><br>
+        <video src="vid1.mp4" autoplay controls></video>
+       <mark>:focus </mark>: Applique un style à un élément lorsqu'il reçoit le focus, généralement via le clavier ou <br> un dispositif similaire. <br><br>
+       <mark>:first-child </mark>: Cible le premier enfant d'un élément parent.          <br><br>
+       <mark>:nth-child() </mark>: Sélectionne des éléments en fonction de leur position dans un groupe, par exemple <br>:nth-child(odd) pour sélectionner les éléments impairs. <br><br>
+       <strong>Pseudo-éléments </strong>:
+   Les pseudo-éléments permettent d'ajouter du contenu ou de styliser des parties spécifiques d'un élément, sans avoir à modifier le balisage HTML. Ils sont représentés par deux points doubles (::) suivis du nom du pseudo-élément. Par exemple : <br>
+    <mark>::before </mark> : Permet d'insérer du contenu avant le contenu de l'élément ciblé. <br><br>
+    <mark>::after</mark>  : Permet d'insérer du contenu après le contenu de l'élément ciblé. <br><br>
+    <mark>::first-line </mark> : Permet de sélectionner la première ligne de texte à l'intérieur d'un élément. <br><br>
+    <mark>::first-letter</mark>  : Cible la première lettre d'un élément pour y appliquer un style spécifique <br><br>
+     </p>
+     <h1 class="h11" id="an">animation/adaptation...</h1> <br>
+     <p>
+        <img src="download.jpg" class="css3" alt="">
+     , il existe d'autres règles spéciales en CSS comme @media et @keyframes. Voici quelques-unes des règles CSS spéciales qui sont fréquemment utilisées dans le développement web : <br><br>
+    <mark class="m"><strong>@media</strong></mark> : Il s'agit d'un identifiant utilisé en CSS pour appliquer des styles spécifiques en fonction des caractéristiques du support sur lequel la page web est affichée <br>. Les règles @media permettent de définir des conditions basées sur les propriétés du média, telles que la taille de l'écran, la largeur de la fenêtre du navigateur, l'orientation de l'appareil, etc. <br> Ces règles sont généralement utilisées pour créer des conceptions responsives, c'est-à-dire des mises en page qui s'adaptent et répondent aux différentes tailles d'écran. Par exemple : <br><br>
+    <img src="media.png" class="html" alt=""> <br>
+    Dans cet exemple, les styles définis à l'intérieur des règles @media s'appliquent uniquement lorsque la condition spécifiée est vraie. Ici, la règle s'applique lorsque l'écran a une largeur maximale de 768 pixels. <br><br>
+    <video src="vid2.mp4" autoplay controls></video>
+    <mark class="m"><strong>@keyframes</strong>  </mark>: Peut-être vouliez-vous mentionner @keyframes ? C'est une règle CSS utilisée pour définir des animations. Les animations en CSS sont créées en définissant une série d'étapes qui décrivent les changements progressifs de l'état d'un élément au fil du temps. La règle @keyframes permet de spécifier ces différentes étapes ou keyframes. Par exemple : <br><br>
+   <img src="karia.png" class="htm" alt=""><br><br>
+   <ul>
+   <mark class="m"><strong> @font-face </strong></mark>: Permet aux développeurs web d'utiliser des polices de caractères spécifiques qui ne sont pas installées sur l'ordinateur de l'utilisateur en définissant des polices téléchargeables depuis le serveur. <br>
+
+    <mark class="m"><strong>@import </strong></mark>: Utilisée pour importer des feuilles de style externes dans un fichier CSS. Cela permet de regrouper plusieurs fichiers CSS en un seul pour faciliter la gestion du code. <br>
+
+     <mark class="m"><strong>@supports</strong></mark> : Permet de vérifier si le navigateur prend en charge certaines propriétés CSS spécifiques ou des fonctionnalités avant d'appliquer des styles, permettant ainsi une meilleure gestion de la compatibilité entre navigateurs. <br>
+
+    <mark class="m"><strong>@namespace</strong></mark> : Utilisé pour définir des espaces de noms pour les sélecteurs CSS, principalement utilisé en relation avec XML et XHTML. <br>
+
+    <mark class="m"><strong>@page </strong></mark>: Utilisé pour définir les styles pour des médias spécifiques, tels que l'impression, pour contrôler l'apparence des pages lorsqu'elles sont imprimées. <br>
+
+    <mark class="m"><strong>@counter-style </strong></mark>: Permet de définir de nouveaux styles de numérotation pour les compteurs CSS utilisés avec les propriétés counter-increment et counter-reset. <br>
+
+     <mark class="m"><strong>@viewport</strong></mark> : Utilisé pour définir des propriétés de la vue (viewport) pour les appareils mobiles et les navigateurs, permettant de contrôler le dimensionnement initial, le niveau de zoom et d'autres comportements de la vue. <br>
+    </ul>
+
+
+
+</p><br><br><br><br><br>
+<br><br><br><br>
+
+
+
+</div><br><br><br>
+<script src="html.js"></script>
+</body>
+</html>-

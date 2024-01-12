@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class=" images">
+        <div class="blue- bg- outer">
+        <div class="white-bg">
+        <div class="blue -bg">
+        </div>
+        </div>
+        <div>
+        </div>
+        <div class=" Information">
+    <h1>Hi, I'm nasima sama</h1>
+        <div class="animated_text">
+        <h1 class="title"> Front-end Developer</hi>
+        </div>
+        <div class="social">
+        <a href="" dass="bi bi-facebook"></i></a>
+        <a href="" dass="bi bi-twitter"x/ix/a>
+        <a href="" dass="bi bi-instagram"></i></a>
+        <a href="" dlass="bi bi-linkedin"> </i></a>
+        </div>
+        </div>
+        </div>
+        
+</body>
+</html>

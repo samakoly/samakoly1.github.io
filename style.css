@@ -1,0 +1,86 @@
+/* Styles généraux communs */
+body {
+    background-image: url('sama1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#div1 {
+    width: 400px;
+    height: 550px;
+    top: 20%;
+    left: 35%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 30% 30% 30% 30%;
+    box-shadow: 6px 6px 8px 8px black;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.container input {
+    margin-bottom: 50px;
+    background-color: transparent;
+    height: 30px;
+    width: 200px;
+    border-bottom: 3px solid whitesmoke;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+
+.container {
+    top: 80px;
+    left: 100px;
+    position: absolute;
+    color: burlywood;
+}
+
+input:hover {
+    background-color: rgb(244, 233, 233);
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: bisque;
+    right: 50px;
+    position: relative;
+}
+
+#login {
+    border-radius: 30% 30% 30% 30%;
+    background-color: beige;
+}
+
+/* Media Queries pour les écrans plus petits (mobiles) */
+@media only screen and (max-width: 600px) {
+    #div1 {
+        width: 80%; /* Ajuster la largeur pour les petits écrans */
+        height: auto; /* Ajuster la hauteur en fonction du contenu */
+        top: 10%; /* Modifier la position verticale */
+        left: 10%; /* Modifier la position horizontale */
+        border-radius: 10px; /* Réduire le rayon de la bordure */
+        box-shadow: none; /* Supprimer l'ombre pour une apparence plus légère */
+        backdrop-filter: none; /* Supprimer le flou de l'arrière-plan */
+    }
+
+    .container {
+        top: 30px; /* Ajuster la position du formulaire */
+        left: 0; /* Centrer le formulaire */
+    }
+    
+    /* Autres modifications pour les petits écrans */
+    /* ... */
+}

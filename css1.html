@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Éditeur HTML et CSS avec exécution en direct</title>
+  <style>
+    
+
+    
+    #html-editor, #css-editor {
+        width: 90%;
+  height: 50%;
+  border: 6px solid rgb(255, 255, 255);
+  background-color: rgb(5, 0, 28);
+  color: aliceblue;
+  font-size: medium;
+    }
+
+    #result-frame {
+        width: 90%;
+  height: 500px;
+  border: 6px solid rgb(5, 0, 28);
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+    }
+    .bh{
+    border-top: 15px solid #0e660c;
+    position: fixed;
+    position: absolute;
+    width: 100%;
+    font-size: large; 
+    padding: 0;
+    margin: 0;
+    display: block
+   }
+   .d1{
+      width: 100%;
+      height: 15px;
+      background-color: #0b7409;
+    }
+    .d2 {
+      width: 100%;
+      height: 15px;
+      background-color: #077d05;
+      box-shadow: 0px 7px 7px -2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .d3 {
+      width: 100%;
+      height: 15px;
+      background-color: #098907;
+      box-shadow: 0px 7px 7px -2px rgba(0, 0, 0, 0.5);
+  }
+  .d4{
+    width: 90%;
+    height: 100%;
+    background-color: #cfe1b9;
+    left: 80px;
+    right: 80px;
+    position: relative;
+    box-shadow: -1px -1px 7px 7px rgb(36, 41, 36);
+    top: 20px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  button{
+  border-bottom: 4px solid rgb(255, 255, 255);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #cfe1b9; 
+}
+button:hover{
+  background-color: #50781f;
+}
+  </style>
+</head>
+<body class="bh">
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div><br><br>
+     <div class="d4">
+      <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div><br><br>
+      <h2>essayer votre code dans cette zone &#128578</h2>
+      code html
+      <textarea id="html-editor">&lt;p&gt;Texte en HTML&lt;/p&gt;</textarea><br>
+      code css
+      <textarea id="css-editor">body { background-color: #f0f0f0; }</textarea><br>
+      <button onclick="renderHTML()">Exécuter</button><br>
+    
+    <iframe id="result-frame"></iframe>
+
+     </div>
+  <script>
+    function renderHTML() {
+      const htmlContent = document.getElementById('html-editor').value;
+      const cssContent = document.getElementById('css-editor').value;
+      const resultFrame = document.getElementById('result-frame');
+      const combinedHTML = `<html>
+                              <head>
+                                <style>${cssContent}</style>
+                              </head>
+                              <body>${htmlContent}</body>
+                            </html>`;
+      resultFrame.srcdoc = combinedHTML;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebMentor BFF</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explorez le monde fascinant du développement web avec [Nom de votre site]. Apprenez le HTML, le CSS et le JavaScript de manière interactive. Des leçons pratiques, des éditeurs de code intégrés, et une communauté engagée vous attendent pour vous guider dans votre parcours d'apprentissage. Développez vos compétences et construisez l'avenir du web avec nous.">
+    <meta name="author" content="SAMA NASIMA">
+    <style>
+        /* Style pour l'animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .user-info {
+            font-size: 100px; /* Taille de police similaire à celle de h1 */
+            text-align: center; /* Alignement centré */
+            animation: fadeIn 2.5s ease-in-out;
+            text-shadow: 6px 6px 9px #0e660c;
+            color: #011f00;
+            
+        }
+        .bh{
+     border-top: 15px solid #0e660c;
+     position: fixed;
+      position: absolute;
+     width: 100%;
+     font-size: large; 
+     padding: 0;
+     margin: 0;
+   }
+   .d1{
+      width: 100%;
+      height: 15px;
+      background-color: #0b7409;
+    }
+    .d2 {
+      width: 100%;
+      height: 15px;
+      background-color: #077d05;
+      box-shadow: 0px 7px 7px -2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .d3 {
+      width: 100%;
+      height: 15px;
+      background-color: #098907;
+      box-shadow: 0px 7px 7px -2px rgba(0, 0, 0, 0.5);
+  }
+  .d4{
+    width: 90%;
+    height: 550px;
+    background-color: #cfe1b9;
+    left: 80px;
+    position: relative;
+    box-shadow: -1px -1px 7px 7px rgb(36, 41, 36);
+    top: 20px;
+    position: relative;
+  }
+  h1{
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 6px 6px 9px #0e660c;
+            color: #011f00;
+  }
+    </style>
+</head>
+<body class="bh">
+    <div class="d1"></div>
+   <div class="d2"></div>
+   <div class="d3"></div><br><br>
+   <div class="d4">
+    <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div>
+    <div id="welcomeDiv">
+        <h1>Bienvenue</h1>
+        <div class="user-info"></div>
+    </div>
+   </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Récupérer les données depuis localStorage
+    var nom = localStorage.getItem("nom");
+    var prenom = localStorage.getItem("prenom");
+
+    // Afficher les données dans la div user-info
+    var userInfoDiv = document.querySelector(".user-info");
+    if (nom && prenom) {
+        userInfoDiv.textContent = nom +'  ' + prenom;
+    }
+    
+    // Redirection vers test2.html après 3 secondes
+    setTimeout(function() {
+        window.location.href = "WebMentor BFF.html";
+    }, 5000);
+});
+
+    </script>
+</body>
+</html>

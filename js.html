@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="js.css">
+</head>
+<body class="bh">
+  
+   <div class="d1"></div>
+   <div class="d2"></div>
+   <div class="d3"></div><br><br>
+    <div class="d4">
+      <div id="div2">
+        <p>study with me with focus</p>
+        <input type="text" id="div3"><br>
+        <div class="space">
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+        <button onclick="reset()">reset</button>
+      </div>
+      </div>
+      <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div>
+      <h1 class="home">javascript</h1>
+
+      <div class="entete">
+        <a href="#intro" class="a2"><h1>introduction</h1></a>
+        <a href="#impact" class="a2"><h1>impact de javascript sur html et css</h1></a>
+        <a href="#gen" class="a2"> <h1>generaliter sur js</h1></a>
+        <a href="#fun" class="a2"> <h1>les fonctions</h1></a>
+          <a href="#event" class="a2"><h1>les événements</h1></a> 
+        </div>
+          <br><br>
+          <h1 class="h11" id="intro">introduction</h1><br>
+          <img src="6.jpg" alt="" class="js1">
+          <p>
+
+          JavaScript est un langage de programmation hautement dynamique, basé sur des prototypes et polyvalent, ce qui signifie qu'il offre une grande liberté aux développeurs pour créer des fonctionnalités interactives et des applications web sophistiquées. En plus d'être un pilier fondamental du développement web côté client, il est également utilisé pour le développement côté serveur grâce à des plateformes telles que Node.js. <br>
+
+Ce langage de script est principalement connu pour sa capacité à manipuler le contenu HTML, à styliser les éléments avec CSS et à ajouter des comportements dynamiques aux pages web. Grâce à des événements intégrés et à une manipulation DOM (Document Object Model) flexible, JavaScript permet de créer des interfaces utilisateur interactives, réactives et conviviales. <br>
+
+Il offre également la possibilité de réaliser des requêtes asynchrones vers des serveurs, permettant ainsi de charger des données en arrière-plan sans interrompre l'expérience utilisateur. Cette caractéristique est fondamentale pour les applications modernes qui nécessitent des mises à jour en temps réel et des échanges de données continus avec les serveurs. <br>
+
+L'écosystème JavaScript est enrichi par une vaste bibliothèque de frameworks et de bibliothèques. Par exemple, des frameworks comme React, Angular, Vue.js offrent des méthodologies de développement structurées pour construire des applications web complexes et réactives de manière efficace. Ces outils permettent aux développeurs de créer des interfaces utilisateur modulaires, des applications à page unique (SPA), et des applications à architecture robuste. <br>
+
+L'un des aspects les plus remarquables de JavaScript est sa flexibilité. Il peut être utilisé pour créer des jeux, des applications mobiles hybrides grâce à des outils comme React Native ou Ionic, des extensions de navigateur, des applications de bureau, et bien plus encore. En raison de cette polyvalence, de nombreux développeurs choisissent d'apprendre JavaScript en premier pour entamer leur parcours dans le développement web et logiciel. <br>
+
+Son évolution constante, avec l'ajout régulier de nouvelles fonctionnalités et améliorations, maintient JavaScript à la pointe de la technologie et en fait un élément clé pour l'avenir du développement web et logiciel. <br>
+</p>      
+<h1 class="h11" id="gen">generaliter sur js</h1><br>
+   <h2>1-message dans javascript</h2>
+   <p>
+    <ul class="ul">
+   <li><mark>document.write('message') </mark>: cette fonction est utiliser pour écrire un message simple</li> 
+   <li><mark>alert('message')</mark>:affiche un boit dialogue d'alert avec un message</li>
+   <li><mark>confirm ('message')</mark>: affiche une boite dialogue de confirmation ave un bouton ok et annuler</li>
+   <li><mark>console.(log/warn/error)   </mark> :affiche un message dans le console débogage du navigateur(.log our un message de journalisation/.warn pour avertissement/.error pour un message d'erreur)</li>
+   <li><mark>promt('message')</mark>:affiche un boit de dialogue qui demande a itilisateur d'enter du text</li>
+  </ul>
+   </p>
+   <h1 class="h11" id="impact">impact de javascript sur html et css</h1><br>
+    <img src="js1.jpg" class="js2" alt="">
+   <p>
+      JavaScript a un impact significatif sur HTML et CSS en permettant une manipulation dynamique et interactive du contenu et du style des pages web. <br>
+
+      1. Manipulation du DOM (Document Object Model) : JavaScript permet de manipuler le DOM, la structure de la page HTML, en ajoutant, supprimant ou modifiant des éléments HTML et leurs attributs. Cela signifie que des éléments peuvent être créés, modifiés ou déplacés en réponse à des actions utilisateur, offrant ainsi une expérience interactive et réactive. <br>
+      
+      2. Interaction utilisateur : Grâce à JavaScript, il est possible de rendre les pages web plus interactives en répondant aux actions de l'utilisateur. Des événements tels que les clics de souris, les survols, les saisies au clavier peuvent déclencher des actions, des animations ou des modifications de contenu en temps réel. <br>
+      
+      3. Validation de formulaire : JavaScript permet de valider les données des formulaires côté client avant leur soumission. Cela offre une meilleure expérience utilisateur en permettant de signaler instantanément des erreurs de saisie sans avoir à recharger la page. <br>
+      
+      4. Animation et dynamisme : JavaScript peut être utilisé pour créer des animations et des effets visuels sur les éléments HTML et CSS. Des transitions, des effets de défilement, des effets de fondu et d'autres animations peuvent être programmés pour améliorer l'aspect visuel et l'interactivité d'une page web. <br>
+      
+      5. Requêtes asynchrones : Avec l'utilisation d'AJAX (Asynchronous JavaScript and XML), JavaScript permet de réaliser des requêtes vers un serveur en arrière-plan, sans recharger la page. Cela permet d'actualiser dynamiquement les données d'une page sans perturber l'expérience utilisateur. <br>
+      
+      Quant à CSS, JavaScript peut également influencer son comportement : <br>
+      
+      1. Modification dynamique du style : JavaScript peut modifier les styles CSS en ajoutant, supprimant ou modifiant des classes et des propriétés CSS. Cela permet de changer dynamiquement l'apparence des éléments en fonction des interactions utilisateur ou d'autres événements. <br>
+      
+      2. Contrôle des animations : JavaScript peut être utilisé pour démarrer, arrêter ou modifier des animations CSS, offrant ainsi une plus grande flexibilité dans la gestion des effets visuels. <br>
+      
+      3. Adaptation du design : En utilisant JavaScript conjointement avec des médias queries, il est possible de créer des designs réactifs et adaptatifs qui répondent aux différents appareils et tailles d'écran. <br>
+      
+      En résumé, JavaScript agit en tant que langage de programmation qui interagit étroitement avec HTML et CSS pour offrir des expériences web interactives, réactives et dynamiques, en permettant la manipulation et le contrôle de la structure, du contenu et du style des pages web. <br>
+      
+    </p>
+   <h2>2-notion de variable/constans en js</h2>
+  <p>
+   
+    <strong>déclaration</strong>  <mark>var</mark> le nom du variable (exemple var a;) <br>
+    <strong>l'affectation</strong><mark>var</mark>=un valeur(exemple var a = 10 ;) <br>
+    <strong>affichage</strong>pour l'affichage en utilise un des fonction des message ci dessus (exemple document.write(a);) <br>
+ <ul>
+ <strong>type des variable :</strong> <br>
+      <li>numbre</li>(réel,entier)
+    <li> string</li>(caractére,chaine de caractére)
+    <li>boolean</li>(vrai,faut)
+  </ul>
+    essayer dans la zone de coding c'est expression suivant (1(var a = 10; document.write(typeof,a))2-(var a = "10" document.write(typeof,a))3- var a = 10; var b = 5; var c = a &lt;b document.write(typeof ,c) )
+   
+  </p>
+  <h2>3-les opérateurs</h2>
+  <p>
+    Pour développer des programmes, en plus des variables à manipuler, nous disposons de nombreux
+opérateurs pour les traiter.
+JS utilise les opérations arithmétiques classiques. Dans les exemples, la valeur initiale de x sera
+toujours égale à 11.
+ <table border="1px">
+  <tr>
+    <th>Signe</th>
+  <th>nom</th>
+  <th>Signification</th>
+  <th>Exemple</th>
+  <th>Résultat</th>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>plus</td>
+    <td>addition</td>
+    <td>x + 3 </td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>moins</td>
+    <td>soustraction</td>
+    <td>x - 3</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>multiplié par</td>
+    <td>multiplication</td>
+    <td>x*2</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>/</td>
+    <td>divisé par</td>
+    <td>division</td>
+    <td>x/2</td>
+    <td>5.5</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>modulo</td>
+    <td>rest de la division </td>
+    <td>x%7</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>=</td>
+    <td>a la valeur</td>
+    <td>affectation</td>
+    <td>x=5</td>
+    <td>5</td>
+  </tr>
+  
+ </table>
+ JS utilise les opérateurs suivants pour la comparaison de valeurs. Ces opérateurs sont utilisés dans
+les structures conditionnelles que nous allons voir plus tard.
+Pour les exemple, on suppose x=11.
+<table border="1px">
+  <tr>
+    <th>Signe</th>
+  <th>nom</th>
+  <th>Exemple</th>
+  <th>Résultat</th>
+  </tr>
+  <tr>
+    <td>==</td>
+    <td>comparaison de valeurs</td>
+    <td>x==11</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>===</td>
+    <td>comparaison de valeur et type</td>
+    <td>x==='11'</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>&lt;</td>
+    <td>inférieur</td>
+    <td> x &lt;11</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>&gt;</td>
+    <td>superieur</td>
+    <td>x&gt;11</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>!=</td>
+    <td>différent</td>
+    <td>x != 11 </td>
+    <td>false</td>
+  </tr>
+ 
+ </table>
+  </p>
+  <p>
+    Aussi appelés opérateurs booléens, ses opérateurs servent à composer deux ou plusieurs conditions. <br>
+    && et :(condition1) && (condition2) :est vrai si les 2 conditions sont vraies, sinon fausse <br>
+    || ou :(condition1) || (condition2) :est vrai si au moins une des 2 conditions est vraie, sinon fausse <br>
+    !() non logique :!(condition) donne vrai si 'condition' est fausse, sinon fausse <br>
+
+  </p>
+  <h2>4-les structures conditionnelles</h2>
+  <h3>structur if</h3>
+  <div class="if">
+    
+      if (condition1) <br>
+{ <br>
+code qui sera interpété si la condition1 est vraie <br>
+} <br>
+else if (condition2) //optionnel <br>
+{ <br>
+code qui sera interpété si la condition2 est vraie <br>
+} <br>
+else //optionnel <br>
+{ <br>
+code qui sera interpété si toutes
+les conditions ci-dessus sont fausses
+}; <br>
+</div>
+<p>
+  La condition doit être toujours entourée de parenthèses ( ).
+Les accolades { } ne sont obligatoires qu'en cas d'instructions multiples.
+Il est possible d'utiliser autant de blocs else if que nécessaire.
+La séquence else (optionnelle) est interprétée si toutes les 'condition' sont fausses
+</p>
+
+<h3>structur switch</h3>
+
+  
+  <div class="if">
+  switch(variable) <br> <br>
+{ <br> <br>
+case valeur1 : instructions à faire si variable=valeur1 ; break ; <br> <br>
+case valeur2 : instructions à faire si variable=valeur2 ; break ; <br><br>
+... <br>
+default : instructions à faire, par défaut, si <br><br>
+variable est différente de valeur1, valeur2 etc ; <br>
+} <br>
+   
+  </div>
+  <p>
+    switch ne peut tester que l'égalité de valeurs et non pas l'inégalité.
+Le contenu des case ( valeur1, etc) doit être un élément déjà évalué. On ne peut y insérer des
+expressions. Pour éviter de tester tous les cas, l'utilisation de break permet de sortir du switch dès
+l'action terminée. Le default permet d'effectuer une action si la variable testée ne coïncide avec aucune
+des valeurs proposées dans les case précédent.
+Il faut préciser un break pour chaque case afin de sortir du switch, sinon le switch va lire et exécuter
+le code contenu dans chaque case à la suite.
+  </p>
+  <h2>4-les structures itératives</h2>
+  <h3>la boucle for</h3>
+  <div class="while"> <br>
+    for (départ_compteur; condition_continuation; incrémentation) <br>
+    { <br>
+    code à interpréter ; <br>
+    } <br>
+  </div>
+  <h3 >while</h3>
+  <div class="while">
+    while (condition) <br>
+{ <br>
+code à exécuter à chaque passage ; <br>
+} <br>
+
+  </div>
+  <h3>do while</h3>
+  <div class="while"> <br>
+    do <br>
+{ <br>
+code qui sera interprété à chaque itération <br>
+} <br>
+while (condition); <br>
+  </div>
+  <p>
+    La boucle do _ while est intéressante si besoin pour une raison ou pour une autre d'effectuer au moins
+un passage dans une boucle pour faire fonctionner un script. L'initialisation est exécutée avant tout
+passage dans la boucle for, tandis que l'incrémentation est exécutée à la fin de chaque passage dans la
+boucle for.
+JavaScript définit les mots-clé break et continue afin de modifier l'exécution des boucles. Le premier
+offre la possibilité d'arrêter l'itération d'une boucle et de sortir de son bloc d'exécution, et le second
+de forcer le passage à l'itération suivante. Les traitements suivants de l'itération courante ne sont alors
+pas effectués.
+break : permet d'interrompre prématurément une boucle for ou while.
+Continue : permet de sauter une instruction dans une boucle for ou while et de continuer ensuite
+le bouclage (sans sortir de celui-ci comme le fait break).
+
+  </p>
+  <h1 class="h11" id="fun">les fonctions</h1><br>
+  <strong style="color: red;">!vous pouvez <a href="js1.html">essayer </a> ces code pour mieux comprend</strong><br>
+
+  <p>
+    JavaScript offre de nombreuses fonctions intégrées pour effectuer diverses opérations. En voici quelques-unes parmi les plus couramment utilisées : <br>
+   <strong>setTimeout() </strong> : Cette fonction permet de définir un délai (en millisecondes) après lequel une fonction spécifiée sera exécutée une seule fois. <br><br>
+   <img src="time.png" class="html" alt=""><br>
+   <strong>setInterval() </strong> : Similaire à setTimeout(), setInterval() exécute périodiquement une fonction donnée à intervalles réguliers spécifiés (en millisecondes). <br><br>
+   
+   <strong>clearTimeout() / clearInterval()</strong> : Permet d'annuler l'exécution d'une fonction définie avec setTimeout() ou setInterval() respectivement. <br><br>
+   <img src="clirtime.png" class="html" alt=""><br>
+   <strong>addEventListener() </strong>: Cette fonction est utilisée pour attacher un gestionnaire d'événements à un élément HTML, pour écouter des événements tels que les clics de souris, les changements de formulaire, etc. <br><br>
+   
+   <strong>fetch() </strong> : Cette fonction permet d'effectuer des requêtes HTTP asynchrones pour récupérer des ressources telles que des données JSON, des images, etc <br><br>
+  <img src="fetch.png" class="html" alt=""><br>
+   <strong>document.querySelector() / document.getElementById() </strong>: Ces fonctions permettent de sélectionner des éléments HTML pour les manipuler en JavaScript. <br><br>
+   <img src="get.png" class="html" alt=""><br>
+   <strong>Array.map()  </strong>: Cette fonction est utilisée pour créer un nouveau tableau en appliquant une fonction à chaque élément du tableau initial. <br><br>
+    <img src="armap.png" class="html" alt=""><br>
+   <strong>Array.filter()  </strong>: Elle crée un nouveau tableau contenant uniquement les éléments du tableau initial qui satisfont à une condition spécifiée. <br><br>
+   <img src="array.png" class="html" alt=""><br>
+   <strong>Array.reduce() </strong> : Permet de réduire un tableau à une seule valeur en appliquant une fonction accumulateur à chaque élément. <br><br>
+    <img src="arred.png" class="html" alt=""><br>
+   <strong>Object.keys() / Object.values() / Object.entries()  </strong>: Ces méthodes sont utilisées pour travailler avec les propriétés des objets en JavaScript. <br><br>
+    <img src="objet.png" class="html" alt=""><br>
+   <strong>Math.random()</strong> : Génère un nombre aléatoire entre 0 (inclus) et 1 (exclus). <br><br>
+    <img src="random.png" class="html" alt=""><br>
+   <strong>Promise </strong>: Une construction asynchrone utilisée pour gérer les opérations asynchrones et les rappels (callbacks). Elle représente une valeur qui peut être disponible maintenant, dans le futur, ou jamais. <br><br>
+   <img src="premis.png" class="htm" alt=""><br>
+   <strong>async/await </strong>: Une syntaxe utilisée avec les Promises pour écrire du code asynchrone de manière plus synchrone et lisible. <br><br>
+    <img src="await.png" class="htm" alt=""><br>
+   <strong>forEach()</strong> : Méthode permettant d'itérer sur chaque élément d'un tableau et d'appliquer une fonction sur chaque élément. <br><br>
+    <img src="for.png" class="html" alt=""><br>
+   <strong>Object.assign() </strong>: Permet de copier les valeurs de toutes les propriétés propres énumérables d'un ou plusieurs objets source vers une objet cible. <br><br>
+    <img src="object.png" class="html" alt=""><br>
+   <strong>localStorage / sessionStorage </strong>: Ces API permettent de stocker des données dans le navigateur côté client. localStorage conserve les données indéfiniment, tandis que sessionStorage les conserve uniquement pour la durée de la session. <br><br>
+    <img src="local.png" class="html" alt=""><br><br>
+   <strong>Date() </strong>: Permet de travailler avec les dates et les heures en JavaScript. <br><br>
+    <img src="date.png" class="html" alt=""><br>
+   <strong>Math methods </strong>: L'objet Math offre de nombreuses méthodes pour effectuer des opérations mathématiques complexes. <br><br>
+    <img src="mathmet.png" class="html" alt=""><br>
+   <strong>Set et Map </strong>: Les objets Set et Map sont des structures de données pour stocker des collections d'éléments uniques (Set) ou des paires clé-valeur (Map). <br><br>
+  <img src="set.png" class="html" alt=""><br>
+  <img src="map.png" class="html" alt=""><br>
+  </p>
+  <h1 class="h11" id="event">les événements</h1><br>
+  En Java, la gestion des événements se fait généralement à l'aide de classes et d'interfaces fournies par la plateforme Java, notamment dans les interfaces graphiques utilisant Swing ou JavaFX. Voici un exemple simple de gestion d'événements en Java Swing pour un bouton (pour telecharger le documents des evenement <a href="event.pdf" download="event"><button>clic ici</button></a>  ) <br><br><br><br><br><br><br>
+<br><br><br>
+
+
+
+
+</div><br><br>
+<script src="html.js"></script>
+</body>
+</html>
