@@ -1,176 +1,229 @@
-
-body{
-  padding: 0;
-  margin: 0;
+*{
+    padding: 0;
+    margin: 0;
 }
-.image{
-  background-image: url(fleur1.jpg);
-  left: 0;
-  width: 30%;
-  height: 100%;
-  position: absolute;
+header{
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Ajout de la propriété position */
+
 }
 .vert{
-  background-color: rgb(10, 45, 10);
-  right: 0;
-  width: 70%;
-  height: 100%;
-  position: absolute;
+    width: 70%;
+    height: 95vh;
+    background-color: #0b510a;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
-.circle1 {
-  width: 350px;  
-  height: 350px;
-  border-radius: 50%; 
-  background-color: #085207; 
-  display: inline-block; 
-  justify-content: center;
-  top:20%;
-  left:17%;
-  position: absolute;
-  align-items: center;
-  display: flex;
+nav{
+    width: 70%;
+    background-color: #0b510a;
+   position: absolute;
+   right: 0;
+}
+nav ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+      
+}
+nav ul li {
+    padding: 27px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+}
+nav ul li:hover {
+     background-color: #0f6a0e;
+}
+
+nav ul li a:hover {
+   border-bottom: 5px solid rgb(255, 255, 255);
+   border-top: 0;
+   border-right: 0;
+   border-left: 0;
+   font-size: 30px;
+   color: rgb(0, 255, 4);
   
 }
-.circle2 {
-  width:300px; 
-  height: 300px; 
-  border-radius: 50%; 
-  background-color:rgb(245, 245, 209); 
-  display: inline-block; 
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.circle3 {
-  width: 250px; 
-  height: 250px; 
-  border-radius: 50%; 
-  background-color:#085207; 
-  display: inline-block; 
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.menu{
-  width: 100%;
-  height: 50px;
-  background-color: #0e660c;
-  top: 10px;
-  position: absolute;
-  align-items: center;
-  flex-wrap: wrap;
-  border-radius: 2px;
-}
-ul{
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  text-shadow: 9px 9px 6px burlywood;
-  color: aliceblue;
-}
-li:hover{
- /* background-color: #000000;*/
-   color: black;
-   background-color: #0a2303;
-   border: 1px solid white;
-  }
-.a{
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 25px;
-}
-.logo{
-  color: black;
-  font-size: 25px;
-  left: 0;
-  position: absolute;
-}
-
-.circle4, .circle5, .circle6, .circle7 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0b510a;
-}
-.circle4:hover, .circle5:hover, .circle6:hover, .circle7:hover{
-  background-color: #09b906;
-  width: 65px;
-  height: 65px;
-}
 .cercle {
-  display: flex;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 85%; /* Ajustez cette valeur pour centrer verticalement */
-  left: 80%; /* Ajustez cette valeur pour centrer horizontalement */
-  transform: translate(-50%, -50%);
-}
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 80%;
+    left: 75%; 
+    transform: translate(-50%, -50%);
+  }
+  .circle4, .circle5, .circle6, .circle7 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+  }
+  .circle4:hover, .circle5:hover, .circle6:hover, .circle7:hover{
+    background-color: #09b906;
+    width: 65px;
+    height: 65px;
+  }
+  .img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
 
-.img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.h1 {
-    -webkit-text-stroke: 1px #fff;
+.circle1 {
+    width: 350px;  
+    height: 350px;
+    border-radius: 50%; 
+    background-color: #0b510a; 
+    display: inline-block; 
+    justify-content: center;
+    top:20%;
+    left:17%;
+    position: absolute;
+    align-items: center;
+    display: flex; 
+  }
+  .circle2 {
+    width:300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    background-color:rgb(245, 245, 209); 
+    display: inline-block; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 50%; /* Ajustez cette valeur en fonction de votre mise en page */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle3 {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    background-color:#0b510a; 
+    display: inline-block; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 50%; /* Ajustez cette valeur en fonction de votre mise en page */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sama{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 50%; /* Ajustez cette valeur en fonction de votre mise en page */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .h1 ,.h4{
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     color: transparent;
     background-repeat: no-repeat;
-    background-image: linear-gradient(#57ad0c, #57ad0c);
+    background-image: linear-gradient(#499804, #73ec09);
     -webkit-background-clip: text;
     background-clip: none;
     background-position: -500px 0;
     animation: backcolor 5s linear infinite;
-    top: 50%;
+    top: 35%;
     left: 20%;
     position: absolute;
     word-spacing: 10px;
     letter-spacing: 4px;
-}
-
-@keyframes backcolor {
+  }
+  #bar{
+    display: none;
+   
+  }
+  .h4{
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    -webkit-text-stroke: 1px rgb(249, 249, 249);
+    background-image: linear-gradient(#bcd9a3, #76fc00);
+  }
+  .logohtml{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  @keyframes backcolor {
 
     100% {
-        -webkit-text-stroke: 1px #57ad0c;
+        -webkit-text-stroke: 1px #438b04;
         background-position: 0 0;
     }
-}
-@media only screen and (max-width: 1024px) {
-    html {
-        font-size: 80%;
+  }
+
+  @media only screen and (max-width: 1288px){
+    .circle1{
+      left: 10%;
     }
-
-    section {
-        margin: 0;
+    .h1,.h4{
+      left: 30%;
     }
+}
+@media only screen and (max-width: 900px){
+  nav ul {
+    display: inline-block;
+    text-align: center;
+  }
+  .vert{
+    width: 100%;
+    bottom:0;
+    top: 30%;
+    height: 70%;
+  }
+  nav{
+    display: none;
+    width: 100%;
+    top: 44px;
+    height: 100vh;
+  }
+  .circle1{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .h1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .h4{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cercle {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  #bar{
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+  }
+}
 
-
-}
-.sama{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-/* Styles pour le sous-menu au survol */
-#contact:hover > #sub-menu {
-  display: block;
-  
-}
-.logohtml{
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-#sub-menu > li{
-  border-bottom: 2px solid whitesmoke;
-  border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
-
-
+    
