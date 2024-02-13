@@ -32,3 +32,19 @@ essayer.addEventListener('click', function(e) {
         subMenu1.style.display = 'none'; // Cacher le sous-menu
     }
 });
+document.getElementById('bar').addEventListener('click', function() {
+    var menuListe = document.getElementById('liste');
+    if (menuListe.style.display === 'block') {
+      menuListe.style.display = 'none';
+      var circles = document.getElementsByClassName('circle');
+      for(var i = 0; i < circles.length; i++) {
+        circles[i].style.display = 'inline-block';
+      }
+    } else {
+      menuListe.style.display = 'block';
+      var circles = document.getElementsByClassName('circle');
+      for(var i = 0; i < circles.length; i++) {
+        circles[i].style.display = 'none';
+      }
+    }
+  });
