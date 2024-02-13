@@ -265,8 +265,8 @@ nav ul li a:hover {
   }
     
     .h4{
-       word-spacing: 5px;
-    letter-spacing:none;
+       word-spacing: normal;
+    letter-spacing:normal;
     }
 }
 
