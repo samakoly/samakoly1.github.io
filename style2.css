@@ -263,6 +263,10 @@ nav ul li a:hover {
     top: 41%;
        white-space: nowrap;
   }
+    
+    .h4{
+         white-space: nowrap;
+    }
 }
 
 
