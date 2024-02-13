@@ -170,7 +170,7 @@ nav ul li a:hover {
     }
   }
 
-  @media only screen and (max-width: 1288px){
+  @media all and (max-width: 1288px){
     .circle1{
       left: 10%;
     }
@@ -178,7 +178,7 @@ nav ul li a:hover {
       left: 30%;
     }
 }
-@media only screen and (max-width: 900px){
+@media all and (max-width: 900px){
   nav ul {
     display: inline-block;
     text-align: center;
